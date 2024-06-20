@@ -45,7 +45,7 @@ class CBasePlayerController;
 class CCSPlayerController;
 class CCSPlayerPawn;
 class CBaseModelEntity;
-class Z_CBaseEntity;
+class CBaseEntity;
 class CGameConfig;
 class CEntitySystem;
 class IEntityFindFilter;

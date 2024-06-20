@@ -97,7 +97,7 @@ public:
 		return pPawn->m_iPlayerState();
 	}
 
-	Z_CBaseEntity *GetObserverTarget()
+	CBaseEntity *GetObserverTarget()
 	{
 		auto pPawn = GetPawn();
 

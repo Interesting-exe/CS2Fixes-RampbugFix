@@ -115,11 +115,11 @@ public:
 	DECLARE_SCHEMA_CLASS(CEntitySubclassVDataBase)
 };
 
-class Z_CBaseEntity : public CEntityInstance
+class CBaseEntity : public CEntityInstance
 {
 public:
 	// This is a unique case as CBaseEntity is already defined in the sdk
-	typedef Z_CBaseEntity ThisClass;
+	typedef CBaseEntity ThisClass;
 	static constexpr const char *ThisClassName = "CBaseEntity";
 	static constexpr bool IsStruct = false;
 
@@ -137,14 +137,14 @@ public:
 	SCHEMA_FIELD(MoveCollide_t, m_MoveCollide)
 	SCHEMA_FIELD(MoveType_t, m_MoveType)
 	SCHEMA_FIELD(MoveType_t, m_nActualMoveType)
-	SCHEMA_FIELD(CHandle<Z_CBaseEntity>, m_hEffectEntity)
+	SCHEMA_FIELD(CHandle<CBaseEntity>, m_hEffectEntity)
 	SCHEMA_FIELD(uint32, m_spawnflags)
 	SCHEMA_FIELD(uint32, m_fFlags)
 	SCHEMA_FIELD(LifeState_t, m_lifeState)
 	SCHEMA_FIELD(float, m_flDamageAccumulator)
 	SCHEMA_FIELD(bool, m_bTakesDamage)
 	SCHEMA_FIELD_POINTER(CUtlStringToken, m_nSubclassID)
-	SCHEMA_FIELD(CHandle<Z_CBaseEntity>, m_hGroundEntity)
+	SCHEMA_FIELD(CHandle<CBaseEntity>, m_hGroundEntity)
 	SCHEMA_FIELD(float, m_flFriction)
 	SCHEMA_FIELD(float, m_flGravityScale)
 	SCHEMA_FIELD(float, m_flTimeScale)
@@ -213,7 +213,7 @@ public:
 	/* End Custom Entities Cast */
 };
 
-class SpawnPoint : public Z_CBaseEntity
+class SpawnPoint : public CBaseEntity
 {
 public:
 	DECLARE_SCHEMA_CLASS(SpawnPoint);

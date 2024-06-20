@@ -32,7 +32,7 @@ public:
 	SCHEMA_FIELD(CUtlSymbolLarge, m_iFilterName)
 	SCHEMA_FIELD(CEntityHandle, m_hFilter)
 
-	bool PassesTriggerFilters(Z_CBaseEntity *pOther)
+	bool PassesTriggerFilters(CBaseEntity *pOther)
 	{
 		static int offset = g_GameConfig->GetOffset("PassesTriggerFilters");
 		return CALL_VIRTUAL(bool, offset, this, pOther);

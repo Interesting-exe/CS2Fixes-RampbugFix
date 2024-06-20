@@ -25,8 +25,8 @@
 #include "variant.h"
 
 class CEntityInstance;
-class Z_CBaseEntity;
+class CBaseEntity;
 class CBasePlayerController;
 class IEntityFindFilter;
 
-Z_CBaseEntity *UTIL_FindPickerEntity(CBasePlayerController *pPlayer);
+CBaseEntity *UTIL_FindPickerEntity(CBasePlayerController *pPlayer);

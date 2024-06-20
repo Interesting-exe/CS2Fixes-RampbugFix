@@ -71,7 +71,7 @@ public:
 	SCHEMA_FIELD_POINTER(CUtlVector<SpawnPoint*>, m_TerroristSpawnPoints)
 };
 
-class CCSGameRulesProxy : public Z_CBaseEntity
+class CCSGameRulesProxy : public CBaseEntity
 {
 public:
 	DECLARE_SCHEMA_CLASS(CCSGameRulesProxy)
