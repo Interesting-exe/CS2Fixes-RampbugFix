@@ -56,6 +56,7 @@ bool addresses::Initialize(CGameConfig *g_GameConfig)
 	RESOLVE_SIG(g_GameConfig, "InitPlayerMovementTraceFilter", addresses::InitPlayerMovementTraceFilter);
 	RESOLVE_SIG(g_GameConfig, "TracePlayerBBox", addresses::TracePlayerBBox);
 	RESOLVE_SIG(g_GameConfig, "InitGameTrace", addresses::InitGameTrace);
+	RESOLVE_SIG(g_GameConfig, "SetGroundEntity", addresses::SetGroundEntity);
 	
 	return true;
 }

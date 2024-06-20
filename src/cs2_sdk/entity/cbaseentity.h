@@ -169,6 +169,11 @@ public:
 		CALL_VIRTUAL(void, offset, this, position, angles, velocity);
 	}
 
+	void SetGroundEntity(CBaseEntity *pGround)
+	{
+		addresses::SetGroundEntity(this, pGround, nullptr);
+	}
+	
 	bool IsPawn()
 	{
 		static int offset = g_GameConfig->GetOffset("IsEntityPawn");
