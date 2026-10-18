@@ -1,3 +1,6 @@
+# OUTDATED
+This plugin is outdated and will probably not be updated. consider using [GameFixes by Slynx](https://github.com/SlynxCZ/GameFixes_mm) instead
+
 # RampbugFix
 Minimizes rampbugs. This plugin isn't perfect and rampbugs will continue to occur until Valve decides to finally fix them.
 
